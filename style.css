@@ -1,0 +1,105 @@
+:root {
+  --color-sedan: hsl(31, 77%, 52%);
+  --color-suv: hsl(184, 100%, 22%);
+  --color-luxury: hsl(179, 100%, 13%);
+  --color-paragraph: hsla(0, 0%, 100%, 0.75);
+  --color-background: hsl(0, 0%, 95%);
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 62.25%;
+  color: var(--color-paragraph);
+  background-color: var(--color-background);
+}
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--color-background);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+p {
+  font-size: 1rem;
+  line-height: 28px;
+}
+.container{
+    
+    margin: 90px 0;
+    /* max-width: 340px; */
+}
+.card {
+  margin: 0px auto;
+  height: 441px;
+  width: 323px;
+}
+.card--sedan {
+    border-radius:10px 10px 0 0;
+  background-color: var(--color-sedan);
+  padding-bottom: 50px;
+}
+.card--suv {
+  padding-bottom: 50px;
+  background-color: var(--color-suv);
+}
+.card--luxury {
+  padding-bottom: 50px;
+  background-color: var(--color-luxury);
+  border-radius:0px 0px 10px 10px;
+}
+.card__svg {
+  left: 3px;
+  margin-bottom: 42px;
+  margin-top: 50px;
+  position: relative;
+}
+.card--position{
+    margin-left: 50px;
+    margin-right: 36px;
+}
+.btn {
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+  font-family: inherit;
+  height: 48px;
+  width: 143px;
+  margin-top: 24px;
+  transition: background-color 0.5s;
+}
+.btn--sedan{
+    margin-left: 0px;
+    color:var(--color-sedan);
+}
+.btn--suv{
+    color:var(--color-suv);
+}
+.btn--luxury{
+    color:var(--color-luxury);
+}
+.btn:hover{
+    cursor:pointer;
+    background-color: transparent;
+    color:inherit;
+    border:2px solid white;
+}
+@media only screen and (min-width:1400px) {
+    .container{
+        display: inline-block;
+        margin:150px 200px;
+    }
+    .card{
+        display: inline-block;
+        float:left;
+    }
+    .card--sedan {
+    border-radius:10px 0px 0px 10px;
+  }
+  .card--luxury{
+    border-radius:0px 10px 10px 0px;
+  }
+
+}
